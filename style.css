@@ -1,0 +1,28 @@
+#vit{
+	color: white ;
+}
+.ruta{
+	border: grey 2px solid;
+	background-color: lightgrey;
+	width: 20px;
+	height:30px;
+	text-align: center;
+}
+.mitten{
+	text-align: center;
+}
+.storlek{
+	width: 100%;
+}
+
+.lagom{
+	vertical-align: centre;
+	width: 80%;
+}
+
+.bakgrund{
+	background-color: lightgrey;
+	border: grey 2px solid;	
+	padding: 20px;
+	width: 70%;
+}
