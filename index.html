@@ -19,65 +19,58 @@
         <div class="bakgrund">
           <img src="bilder\Karta.jpg" class="storlek">
         </div>
+        <h3 id="svar">Fråga 1</h3>
+        <h4 id="fraga">Var ligger Indien</h4>
         <br>
         <br>
-        <form>
-            <label for="1">Var ligger indien</label> <br>
+        <form id="quiz" onsubmit="ladda();return false">
             <input type="radio" name="1" value="Indier">Där indierna bor <br>
             <input type="radio" name="1" value="Indianer">Där indianerna bor <br>
             <input type="radio" name="1" value="Indonesien">Där Indonesierna bor <br>
-            <input type="radio" name="1" value="Trädgård">I din trädgård <br>
+            <input type="radio" name="1" value="Trädgård">I din trädgård <br><br>
+            <input class="btn btn-primary" type="submit">
           <br>
           <br>
-            <label for="2">Vilket är världens minsta land</label><br>
             <input type="radio" name="2" value="Mikronesien">Mikronesien <br>
             <input type="radio" name="2" value="Sverige">Sverige <br>
             <input type="radio" name="2" value="Vatikanstaten">Vatikanstaten <br>
             <input type="radio" name="2" value="Lischtenstein">Lischtenstein <br>
           <br><br>
-            <label for="3">Vilket land gränsa inte till Polen</label><br>
             <input type="radio" name="3" value="Mikronesien">Tyskland <br>
             <input type="radio" name="3" value="Sverige">Ryssland <br>
             <input type="radio" name="3" value="Vatikanstaten">Slovakien <br>
             <input type="radio" name="3" value="Lischtenstein">Ungern <br>
           <br><br>
-            <label for="4">Vad är Monsterrat</label><br>
-            <input type="radio" name="4" value="Nigerien">En del an Nigeria<br>
+            <input type="radio" name="4" value="Nigerien">En del av Nigeria<br>
             <input type="radio" name="4" value="Koloni">En brittisk koloni<br>
             <input type="radio" name="4" value="Råtta">En stor råtta<br>
             <input type="radio" name="4" value="ö">En ö i stilla havet<br>
           <br><br>
-            <label for="5">Hur lång är den Kinesiska muren</label><br>
             <input type="radio" name="5" value="Lång">Lång <br>
             <input type="radio" name="5" value="Längre">Längre<br>
             <input type="radio" name="5" value="Väldigt">Väldigt lång<br>
             <input type="radio" name="5" value="Varv">Två varv runt jorden lång<br>
                       <br><br>
-            <label for="6">Vart är du om du bor i Kamtchakta</label><br>
             <input type="radio" name="6" value="Sibirien">I Sibirien<br>
             <input type="radio" name="6" value="Burdusien">I Burdusien<br>
             <input type="radio" name="6" value="Galicien">I Galicien<br>
             <input type="radio" name="6" value="Bessarabien">I Bessarabien<br>
                       <br><br>
-            <label for="7">Vilket språk talar man i Irkutsk</label><br>
             <input type="radio" name="7" value="Tyska">Tyska<br>
             <input type="radio" name="7" value="Ryska">Ryska<br>
             <input type="radio" name="7" value="Inuktitut">Inuktitut<br>
             <input type="radio" name="7" value="Utomjordiska">Utomjordiska<br>
                       <br><br>
-            <label for="8">Om Gizapyramiden ligger i Giza var ligger då Eifeltornet.</label><br>
             <input type="radio" name="8" value="Eifel">I Eifel<br>
             <input type="radio" name="8" value="Torn">I tornedalen<br>
             <input type="radio" name="8" value="Paris">I Paris<br>
             <input type="radio" name="8" value="Giza">I Giza<br>
                       <br><br>
-            <label for="9">Var bor Påven</label><br>
             <input type="radio" name="9" value="Rom">I Rom<br>
             <input type="radio" name="9" value="Håven">I Håven<br>
             <input type="radio" name="9" value="Louvren">I Louvren<br>
             <input type="radio" name="9" value="Kyrkan">I Guds hus<br>
                       <br><br>
-            <label for="10">Vilket är världens sämsta land</label><br>
             <input type="radio" name="10" value="Danmark">Danmark<br>
             <input type="radio" name="10" value="Danmark">Danmark<br>
             <input type="radio" name="10" value="Danmark">Danmark<br>
