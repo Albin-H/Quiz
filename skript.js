@@ -1,8 +1,12 @@
 let nummer = 0;
-function svar() {
-	
-	
-} 
+function svar(){
+
+let ett = document.querySelector("#quiz").fråga1.value;
+
+if (ett == "Indier") {
+	document.querySelector("#resultat").innerHTML += "Rätt!!";
+}
+}
 
 const frågor = [
 	{
@@ -32,10 +36,22 @@ const frågor = [
 	{
 		Fråga: "Vilket är världens sämsta land"
 	},
+
 ];
 
 function ladda() {
 	document.querySelector("#svar").innerHTML = "Fråga " + (nummer + 2);
 	document.querySelector("#fraga").innerHTML = frågor[nummer].Fråga;
 	nummer++;
+
+	
 }
+function resultat(){
+
+	if (nummer > 7) {
+		document.querySelector("#avsluta").innerHTML += `<button class="svara"´>Kolla Svar</button> `;
+		document.getElementById("knapp").style.visibility = "hidden";
+
+	}
+}
+	

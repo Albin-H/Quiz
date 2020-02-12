@@ -24,13 +24,15 @@
         <br>
         <br>
         <form id="quiz" onsubmit="ladda();return false">
-            <input type="radio" name="1" value="Indier">Där indierna bor <br>
-            <input type="radio" name="1" value="Indianer">Där indianerna bor <br>
-            <input type="radio" name="1" value="Indonesien">Där Indonesierna bor <br>
-            <input type="radio" name="1" value="Trädgård">I din trädgård <br><br>
-            <input class="btn btn-primary" type="submit">
+            <input type="radio" name="fråga1" value="Indier">Där indierna bor <br>
+            <input type="radio" name="fråga1" value="Indianer">Där indianerna bor <br>
+            <input type="radio" name="fråga1" value="Indonesien">Där Indonesierna bor <br>
+            <input type="radio" name="fråga1" value="Trädgård">I din trädgård <br><br>
+            <input class="btn btn-primary" id="knapp" type="submit" value="Nästa" onclick="resultat(), svar()">
           <br>
           <br>
+          <h5 id="avsluta"></h5>
+          <h5 id="resultat"></h5>
             <input type="radio" name="2" value="Mikronesien">Mikronesien <br>
             <input type="radio" name="2" value="Sverige">Sverige <br>
             <input type="radio" name="2" value="Vatikanstaten">Vatikanstaten <br>
