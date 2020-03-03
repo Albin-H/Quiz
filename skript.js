@@ -1,13 +1,14 @@
 let Rätt = 1;
 let nummer = 0;
 let tal = 1;
+let antal = 0;
 function svar(){
 
-let container = document.querySelector("#quiz").tal.value;
+let container = document.querySelector("#quiz").fråga.value;
 tal ++;
 
 	if (container == Rätt) {
-		document.querySelector("#resultat").innerHTML += "Rätt!!";
+		antal++;
 	}
 }
 
@@ -39,71 +40,78 @@ const frågor = [
 	{
 		Fråga: "Vilket är världens sämsta land"
 	},
+	{
+		Fråga: "Vill du se svar?"
+	},
 
 ];
 
 const svarsalternativ = [
 	{
-		alternativ: `<input type="radio" name="2" value="1">Mikronesien <br>
-            <input type="radio" name="2" value="2">Sverige <br>
-            <input type="radio" name="2" value="3">Vatikanstaten <br>
-            <input type="radio" name="2" value="4">Lischtenstein <br>
+		alternativ: `<input type="radio" name="fråga" value="1">Mikronesien <br>
+            <input type="radio" name="fråga" value="2">Sverige <br>
+            <input type="radio" name="fråga" value="3">Vatikanstaten <br>
+            <input type="radio" name="fråga" value="4">Lischtenstein <br>
           	<br>`
 	},
 	{
-		alternativ: `<input type="radio" name="3" value="Mikronesien">Tyskland <br>
-            <input type="radio" name="3" value="Sverige">Ryssland <br>
-            <input type="radio" name="3" value="Vatikanstaten">Slovakien <br>
-            <input type="radio" name="3" value="Lischtenstein">Ungern <br>
+		alternativ: `<input type="radio" name="fråga" value="1">Tyskland <br>
+            <input type="radio" name="fråga" value="2">Ryssland <br>
+            <input type="radio" name="fråga" value="3">Slovakien <br>
+            <input type="radio" name="fråga" value="4">Ungern <br>
           <br>`
 	},
 	{
-		alternativ: `<input type="radio" name="4" value="Nigerien">En del av Nigeria<br>
-            <input type="radio" name="4" value="Koloni">En brittisk koloni<br>
-            <input type="radio" name="4" value="Råtta">En stor råtta<br>
-            <input type="radio" name="4" value="ö">En ö i stilla havet<br>
+		alternativ: `<input type="radio" name="fråga" value="1">En del av Nigeria<br>
+            <input type="radio" name="fråga" value="2">En brittisk koloni<br>
+            <input type="radio" name="fråga" value="3">En stor råtta<br>
+            <input type="radio" name="fråga" value="4">En ö i stilla havet<br>
           <br>`
 	},
 	{
-		alternativ: `<input type="radio" name="5" value="Lång">Lång <br>
-            <input type="radio" name="5" value="Längre">Längre<br>
-            <input type="radio" name="5" value="Väldigt">Väldigt lång<br>
-            <input type="radio" name="5" value="Varv">Två varv runt jorden lång<br>
+		alternativ: `<input type="radio" name="fråga" value="¨1">Lång <br>
+            <input type="radio" name="fråga" value="2">Längre<br>
+            <input type="radio" name="fråga" value="3">Väldigt lång<br>
+            <input type="radio" name="fråga" value="4">Två varv runt jorden lång<br>
                       <br>`
 	},
 	{
-		alternativ: `<input type="radio" name="6" value="Sibirien">I Sibirien<br>
-            <input type="radio" name="6" value="Burdusien">I Burdusien<br>
-            <input type="radio" name="6" value="Galicien">I Galicien<br>
-            <input type="radio" name="6" value="Bessarabien">I Bessarabien<br>
+		alternativ: `<input type="radio" name="fråga" value="1">I Sibirien<br>
+            <input type="radio" name="fråga" value="2">I Burdusien<br>
+            <input type="radio" name="fråga" value="3">I Galicien<br>
+            <input type="radio" name="fråga" value="4">I Bessarabien<br>
                       <br>`
 	},
 	{
-		alternativ: `<input type="radio" name="7" value="Tyska">Tyska<br>
-            <input type="radio" name="7" value="Ryska">Ryska<br>
-            <input type="radio" name="7" value="Inuktitut">Inuktitut<br>
-            <input type="radio" name="7" value="Utomjordiska">Utomjordiska<br>
+		alternativ: `<input type="radio" name="fråga" value="1">Tyska<br>
+            <input type="radio" name="fråga" value="2">Ryska<br>
+            <input type="radio" name="fråga" value="3">Inuktitut<br>
+            <input type="radio" name="fråga" value="4">Utomjordiska<br>
                       <br>`
 	},
 	{
-		alternativ: `<input type="radio" name="8" value="Eifel">I Eifel<br>
-            <input type="radio" name="8" value="Torn">I tornedalen<br>
-            <input type="radio" name="8" value="Paris">I Paris<br>
-            <input type="radio" name="8" value="Giza">I Giza<br>
+		alternativ: `<input type="radio" name="fråga" value="1">I Eifel<br>
+            <input type="radio" name="fråga" value="2">I tornedalen<br>
+            <input type="radio" name="fråga" value="3">I Paris<br>
+            <input type="radio" name="fråga" value="4">I Giza<br>
                       <br>`
 	},
 	{
-		alternativ: `<input type="radio" name="9" value="Rom">I Rom<br>
-            <input type="radio" name="9" value="Håven">I Håven<br>
-            <input type="radio" name="9" value="Louvren">I Louvren<br>
-            <input type="radio" name="9" value="Kyrkan">I Guds hus<br>
+		alternativ: `<input type="radio" name="fråga" value="1">I Rom<br>
+            <input type="radio" name="fråga" value="2">I Håven<br>
+            <input type="radio" name="fråga" value="3">I Louvren<br>
+            <input type="radio" name="fråga" value="4">I Guds hus<br>
                       <br>`
 	},
 	{
-		alternativ: `<input type="radio" name="10" value="Danmark">Danmark<br>
-            <input type="radio" name="10" value="Danmark">Danmark<br>
-            <input type="radio" name="10" value="Danmark">Danmark<br>
-            <input type="radio" name="10" value="Norge">Norge<br>`
+		alternativ: `<input type="radio" name="fråga" value="1">Norge<br>
+            <input type="radio" name="fråga" value="1">Norge<br>
+            <input type="radio" name="fråga" value="1">Norge<br>
+            <input type="radio" name="fråga" value="1">Norge<br><br>`
+	},
+	{
+		alternativ: `<input type="radio" name="fråga" value="´1">Ja<br>
+			<input type="radio" name="fråga" value="2">Nej`
 	},
 
 ];
@@ -113,28 +121,31 @@ const rättsvar = [
 		alternativ: "3"
 	},
 	{
-		alternativ: ""
+		alternativ: "4"
 	},
 	{
-		alternativ: ""
+		alternativ: "2"
 	},
 	{
-		alternativ: ""
+		alternativ: "3"
 	},
 	{
-		alternativ: ""
+		alternativ: "1"
 	},
 	{
-		alternativ: ""
+		alternativ: "2"
 	},
 	{
-		alternativ: ""
+		alternativ: "3"
 	},
 	{
-		alternativ: ""
+		alternativ: "1"
 	},
 	{
-		alternativ: ""
+		alternativ: "4"
+	},
+	{
+		alternativ: "1"
 	},
 ];
 
@@ -149,10 +160,12 @@ function ladda() {
 }
 function resultat(){
 
-	if (nummer > 7) {
-		document.querySelector("#avsluta").innerHTML += `<button class="svara"´>Kolla Svar</button> `;
+	if (nummer > 8) {
+		document.querySelector("#avsluta").innerHTML += `<button class="btn btn-success svara" onclick="rätta(); return false">Kolla Svar</button> `;
 		document.getElementById("knapp").style.visibility = "hidden";
 
 	}
 }
-	
+function rätta(){
+	document.getElementById("resultat").innerHTML = "Du fick " + antal + "/10 Poäng"; return false;
+}
